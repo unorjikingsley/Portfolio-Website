@@ -49,12 +49,10 @@ Hello Microverse Project is an entry level project for recent Micronuts. The aim
   </ul>
 </details>
 
-<!-- Features -->
-
 ### Key Features <a name="key-features"></a>
 
 - Display text on Chrome or any v8 engines
-- colour text of green
+- Mobile portfolio website
 - Error free
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -63,7 +61,7 @@ Hello Microverse Project is an entry level project for recent Micronuts. The aim
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](http://127.0.0.1:5500/) Local Host
+- No Demo link at the moment but susequence updates would show link.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -95,9 +93,7 @@ The project is not yet capable of installation but subsequent updates would have
 
 ### Usage
 
-To run the project, execute the following command:
-
-The project is not yet capable of execution but subsequent updates would have that feature.
+Web browser.
 
 ### Run tests
 
