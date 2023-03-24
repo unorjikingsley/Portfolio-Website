@@ -236,11 +236,13 @@ ul {
   color: #fff;
 }
 
-button.but {
+.lang .but {
   font-size: 15px;
   font-weight: 500;
   font-style: normal;
+  font-family: 'Inter', sans-serif;
   padding: 10px 12px;
+  line-height: 20px;
   color: #fff;
   background-color: rgba(255, 255, 255, 0.277);
   cursor: not-allowed;
@@ -249,29 +251,16 @@ button.but {
   border: rgba(255, 255, 255, 0.277);
 }
 
-button.but:hover {
-  background-color: #ff6b00;
-}
-
-button.but:enabled {
-  cursor: pointer;
-  opacity: 1; /* Reset opacity */
-  pointer-events: auto;
-}
-
-button.but2 {
-  font-size: 13px;
-  font-weight: 600;
+.skills .but2 {
+  font-size: 15px;
+  font-weight: 500;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
   padding: 10px 12px;
   color: #091e42;
   background-color: #fff;
   cursor: pointer;
-  border: 1px solid #8993a4;
-}
-
-button.but2:hover {
-  background-color: #172b4d;
-  color: #fff;
+  border: 2px solid #8993a4;
 }
 
 .cont-text {
