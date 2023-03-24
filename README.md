@@ -29,7 +29,7 @@
 
 # 📖 Hello Microverse' project <a name="about-project"></a>
 
-Hello Microverse Project is an entry level project for recent Micronuts. The aim of this project is for students to familiarize theirselves with Git, GitHub, HTML, and CSS.
+Hello Microverse Project is an entry level project for recent Micronuts. The aim of this project is for students to familiarize theirselves with Git, GitHub, HTML, and CSS and also build a responsive mobile Professionalsts portfolio.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -53,7 +53,7 @@ Hello Microverse Project is an entry level project for recent Micronuts. The aim
 
 ### Key Features <a name="key-features"></a>
 
-- Display text on Chrome or any v8 engines 
+- Display text on Chrome or any v8 engines
 - colour text of green
 - Error free
 
@@ -77,23 +77,21 @@ To get a local copy up and running, follow these steps.
 
 In order to run this project you need:
 
-- Create a GitHub Repository 
+- Create a GitHub Repository
 
 ### Setup
 
 Clone this repository to your desired folder:
 
-  cd my-folder
-  git clone git@github.com/unorjikingsley/kingrepo
-  or download the zip file to your local machine
-
+cd my-folder
+git clone git@github.com/unorjikingsley/kingrepo
+or download the zip file to your local machine
 
 ### Install
 
 Install this project with:
 
-  The project is not yet capable of installation but subsequent updates would have that feature. 
-
+The project is not yet capable of installation but subsequent updates would have that feature.
 
 ### Usage
 
@@ -109,8 +107,7 @@ The project is not yet in a testing phase.
 
 ### Deployment
 
-The project can't be deployed at the moment 
-
+The project can't be deployed at the moment
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -122,13 +119,11 @@ The project can't be deployed at the moment
 
 - GitHub: [@unorjikingsley](https://github.com/unorjikingsley)
 
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
-
 
 - [ ] **[Include images]**
 - [ ] **[Designs and forms]**
