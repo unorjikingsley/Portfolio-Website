@@ -1266,20 +1266,36 @@
   input[type='text'] {
     background: transparent;
     border: none;
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid #dbd8d7;
     margin-top: 120px;
     width: 500px;
     justify-content: flex-start;
+    color: #979493;
+    padding-bottom: 1.5%;
+    padding-left: 2.5%;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
   }
 
   input[type='email'] {
     background: transparent;
     border: none;
-    border-bottom: 1px solid #000;
-    margin-top: 70px;
+    border-bottom: 1px solid #dbd8d7;
+    margin-top: 30px;
     width: 684px;
     justify-content: flex-start;
+    padding-bottom: 1.5%;
+    padding-left: 2.5%;
     margin-bottom: 30px;
+    color: #979493;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
   }
 
   textarea {
@@ -1294,7 +1310,13 @@
     font-weight: 400;
     font-size: 15px;
     line-height: 24px;
+    border: none;
+    color: #3c3a39;
   }
+
+  /* .ta {
+    border: 5px solid black;
+  } */
 
   button.btz {
     margin-right: 80%;
@@ -1309,6 +1331,11 @@
     background: #f55800;
     margin-bottom: 150px;
     border: none;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 24px;
   }
 
   .btz:enabled {
