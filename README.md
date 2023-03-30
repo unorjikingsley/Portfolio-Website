@@ -54,6 +54,7 @@ Hello Microverse Project is an entry level project for recent Micronuts. I creat
 - Display text on Chrome or any v8 engines
 - Mobile portfolio website
 - Error free
+- Animations and transitions
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
