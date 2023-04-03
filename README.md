@@ -61,7 +61,7 @@ Hello Microverse Project is an entry level project for recent Micronuts. The aim
 
 ## 🚀 Live Demo <a name="https://unorjikingsley.github.io/Portfolio-Website/"></a>
 
-- No Demo link at the moment but susequence updates would show link.
+- (https://unorjikingsley.github.io/Portfolio-Website/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
