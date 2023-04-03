@@ -29,7 +29,7 @@
 
 # 📖 Hello Microverse' project <a name="about-project"></a>
 
-Hello Microverse Project is an entry level project for recent Micronuts. The aim of this project is for students to familiarize theirselves with Git, GitHub, HTML, and CSS and also build a responsive mobile Professionalsts portfolio.
+Hello Microverse Project is an entry level project for recent Micronuts. I created a responsive portfolio website for mobile and desktop. The aim of this project is for students to familiarize theirselves with Git, GitHub, HTML, and CSS and also build a responsive mobile Professionalsts portfolio.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -38,7 +38,7 @@ Hello Microverse Project is an entry level project for recent Micronuts. The aim
 <details>
   <summary>HTML</summary>
   <ul>
-    <li><a href="#">javascript</a></li>
+    <li><a href="#">HTML</a></li>
   </ul>
 </details>
 
@@ -54,6 +54,7 @@ Hello Microverse Project is an entry level project for recent Micronuts. The aim
 - Display text on Chrome or any v8 engines
 - Mobile portfolio website
 - Error free
+- Animations and transitions
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
