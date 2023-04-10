@@ -13,9 +13,17 @@
 <body>
     <header class="header">
         <a href="" class="name">Kingsley</a>
-        <nav class="hamburger"><i class="fas fa-bars"></i></nav>
-        <!--desktop-->
+        <button class="nav-toggle"><span class="hamburger"></span></button>
 
+        <nav class="navigation">
+            <ul class="nav-items">
+                <li class="nav-list"><a href="#my-works">Portfolio</a></li>
+                <li class="nav-list"><a href="#aboutme">About</a></li>
+                <li class="nav-list"><a href="#form">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!--desktop-->
         <ul class="headline-sect">
             <li><a href="">Portfolio</a></li>
             <li><a href="">About</a></li>
@@ -87,7 +95,7 @@
     </article>
 
 
-    <section class="MyWorks">
+    <section class="MyWorks" id="my-works">
         <div class="container-a">
             <div class="container1a"></div>
             <button type="button" class="oversight">See-Project</button>
@@ -188,7 +196,7 @@
         </div>
     </section>
 
-    <section class="About-me">
+    <section class="About-me" id="aboutme">
         <div class="picfix">
             <div class="moved">
                 <div class="abt">
@@ -243,10 +251,10 @@
                     </div>
                 </div>
             </div>
-         </div>
+        </div>
     </section>
 
-    <form action="https://formspree.io/f/xeqwrjop" method="post" class="contact-form">
+    <form action="https://formspree.io/f/xeqwrjop" method="post" class="contact-form" id="form">
         <div class="interest">
             <h4>I'm always interested in hearing about new projects,
                 so if you'd like to chat please get in touch.</h4>
@@ -285,6 +293,7 @@
             </li>
         </ul>
     </footer>
+    <script src="script/index.js"></script>
 </body>
 
 </html>
