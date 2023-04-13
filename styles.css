@@ -372,6 +372,156 @@ html {
     border: 1px solid #f55800;
   }
 
+  .popupcontainer {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.85);
+    display: none;
+    backdrop-filter: 10px;
+  }
+
+  .extended {
+    display: block;
+  }
+
+  .modalwindowcontainer {
+    background-color: #fff;
+    margin: 5% 5%;
+    padding: 16px;
+    height: 748px;
+    overflow: hidden;
+  }
+
+  .popup-header {
+    display: flex;
+    padding-bottom: 3%;
+  }
+
+  .trackkeeping {
+    width: 259px;
+    height: 82px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 44px;
+    color: #172b4d;
+  }
+
+  .close-button {
+    font-size: 40px;
+    color: #67798e;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 1.7rem;
+    right: 30px;
+    cursor: pointer;
+    transition: font-size ease-in-out 0.75s;
+  }
+
+  .desktopnewlang {
+    padding-bottom: 4%;
+    gap: 8px;
+  }
+
+  .desknewLang {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    left: calc(50% - 343px / 2);
+    background: #fff;
+    border: 1px solid #dfe1e6;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    color: #3c3a39;
+    padding: 10px 12px;
+  }
+
+  .img-popup {
+    width: 311px;
+    height: 220px;
+  }
+
+  #popup-image {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10%;
+  }
+
+  .thetxt {
+    width: 311px;
+    height: 140px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #344563;
+    margin-bottom: 30%;
+    font-family: 'Inter', sans-serif;
+  }
+
+  .livedisplay {
+    display: flex;
+    gap: 19px;
+  }
+
+  .cardbutton1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 12px;
+    height: 48px;
+    width: 134px;
+    background: #ff6b00;
+    border: none;
+    gap: 3px;
+  }
+
+  .live-link {
+    width: 74px;
+    height: 24px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #fff;
+  }
+
+  .source-link {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #fff;
+    gap: 2px;
+  }
+
+  .fa-github::before {
+    content: "\f09b";
+    color: #fff;
+  }
+
+  .desktpopupcontainer {
+    display: none;
+  }
+
   /* ......... my works .........  */
 
   .container-a {
@@ -442,7 +592,7 @@ html {
     border: rgba(255, 255, 255, 0.277);
   }
 
-  .oversight-2 {
+  .oversight {
     background: #ff6b00;
     padding: 10px;
     text-align: center;
@@ -459,7 +609,7 @@ html {
     border: #ff6b00;
   }
 
-  .oversight-2:hover {
+  .oversight:hover {
     background-color: #172b4d;
     color: #ff6b00;
   }
@@ -467,6 +617,15 @@ html {
   #btn:hover {
     transition-duration: 0.8s;
     width: 100px;
+  }
+
+  /* .........popup........ */
+
+  #btn2:hover {
+    background-color: #3c3a39;
+    transition-delay: 0.1s;
+    font-size: larger;
+    padding: 5%;
   }
 
   /* .......... about me.........  */
@@ -1088,6 +1247,8 @@ html {
     border: 1px solid #f55800;
   }
 
+  /* ........... popup .... */
+
   .MyWorks {
     display: grid;
     grid-template-columns: 380px 380px 380px;
@@ -1096,36 +1257,12 @@ html {
     gap: 24px;
   }
 
-  .container-b {
-    display: none;
-  }
-
-  .container-a {
-    background-image: url(images/ph1.png);
-    border: 2px solid black;
-    height: 435px;
-    position: relative;
-  }
-
-  .container1a {
-    background-size: cover;
-    flex-direction: column;
-    display: flex;
-    justify-content: center;
-    width: 369px;
-    padding-top: 100px;
-  }
-
   .oversight {
-    width: 100%;
+    width: 368px;
     height: 40px;
     background: #f55800;
     border: none;
     color: #fff;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -1138,20 +1275,24 @@ html {
     border: 1px solid #f55800;
   }
 
+  /* ......... end popup........... */
+
   .container1 {
+    background-image: url(images/placeholder.png);
     background-size: cover;
     flex-direction: column;
     display: flex;
     justify-content: center;
     width: 369px;
     height: 435px;
-    padding-top: 170px;
-    position: relative;
-    transition: transform 0.3s ease-in-out;
+    padding-top: 100px;
   }
 
-  .container1:hover {
-    transform: translate(10px, 0);
+  .flex-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 140px;
+    gap: 24px;
   }
 
   .cont-header {
@@ -1181,13 +1322,21 @@ html {
   }
 
   .lang {
+    width: 37px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: #fff;
     display: flex;
-    gap: 12px;
-    width: 247px;
+    justify-content: flex-start;
     margin-left: 16px;
+    gap: 12px;
+    padding-top: 15%;
   }
 
-  .lang .but {
+  .but {
     font-size: 15px;
     font-weight: 500;
     font-style: normal;
@@ -1195,31 +1344,13 @@ html {
     padding: 10px 12px;
     line-height: 20px;
     color: #fff;
-    background-color: rgba(255, 255, 255, 0.277);
-    cursor: not-allowed;
-    outline: none;
+    background: rgba(255, 255, 255, 0.277);
     transition: 0.2s;
-    border: none;
+    border: rgba(255, 255, 255, 0.277);
   }
 
   ul li {
     list-style: none;
-  }
-
-  .oversight-2 {
-    display: none;
-  }
-
-  #ph-1 {
-    background-image: url(images/ph3.png);
-  }
-
-  #ph {
-    background-image: url(images/ph.png);
-  }
-
-  #ph-2 {
-    background-image: url(images/placeholder.png);
   }
 
   .About-me {
@@ -1250,6 +1381,10 @@ html {
     display: grid;
     margin-bottom: 150px;
     margin-left: 142px;
+  }
+
+  * .moved {
+    margin-top: 130px;
   }
 
   .abt-text {
@@ -1520,5 +1655,175 @@ html {
   .footer-icons li img:hover {
     width: 15px;
     height: 15px;
+  }
+
+  .desktpopupcontainer {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.85);
+    display: none;
+    backdrop-filter: blur (30px);
+  }
+
+  .expanded {
+    display: block;
+  }
+
+  .desktmodalwindowcontainer {
+    background-color: #fff;
+    margin: 5% auto;
+    padding: 16px;
+    height: 80%;
+    width: 70%;
+    box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
+  }
+
+  .desktpopup-header {
+    display: flex;
+    padding-bottom: 2%;
+  }
+
+  .deskttrackkeeping {
+    width: 259px;
+    height: 82px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
+    color: #172b4d;
+  }
+
+  .desktclose-button {
+    font-size: 40px;
+    color: #67798e;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 5rem;
+    right: 250px;
+    cursor: pointer;
+    transition: font-size ease-in-out 0.75s;
+  }
+
+  .Ddesktopnewlang {
+    padding-bottom: 2%;
+    display: flex;
+    gap: 19px;
+  }
+
+  .DdesknewLang {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 24px;
+    width: 100px;
+    left: calc(50% - 343px / 2);
+    background: #fff;
+    border: 1px solid #dfe1e6;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    color: #3c3a39;
+  }
+
+  .desktimg-popup {
+    width: 550px;
+    height: 360px;
+    top: 156px;
+  }
+
+  .desktpicturefttext {
+    display: flex;
+    gap: 23px;
+  }
+
+  .desktthetxt {
+    width: 424px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #344563;
+    letter-spacing: 1px;
+  }
+
+  .desktlivedisplay {
+    display: flex;
+    gap: 19px;
+    margin-top: 70px;
+  }
+
+  .desktcardbutton1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 12px;
+    height: 48px;
+    width: 134px;
+    background: #ff6b00;
+    border: none;
+    gap: 3px;
+  }
+
+  .desktlive-link {
+    width: 74px;
+    height: 24px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #fff;
+  }
+
+  .desktsource-link {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #fff;
+    gap: 2px;
+  }
+
+  .fa-github::before {
+    content: "\f09b";
+    color: #fff;
+  }
+
+  .popupcontainer {
+    display: none;
+  }
+
+  .desktopclick {
+    display: block;
+  }
+
+  .desktexts {
+    width: 1056px;
+    height: 40px;
+    font-family: 'Crete Round', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 44px;
+    color: #172b4d;
   }
 }
