@@ -26,13 +26,13 @@ const projectsArray = [{
   deskDescription: 'Keeping track of hundreds  of components website',
   image: './images/ss-small.png',
   deskImage: './images/ss-big.png',
-  desktexts: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',
-  languages1: 'HTML',
-  languages2: 'Bootstrap',
+  desktexts: 'A daily selection of privately personalized reads; no accounts or sign-ups required. This has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
+  languages1: 'CSS',
+  languages2: 'HTML',
   languages3: 'Ruby on Rails',
+  languages4: 'Bootstrap',
   seeLive: 'https://unorjikingsley.github.io/Portfolio-Website/',
   seeSource: 'https://github.com/unorjikingsley/Portfolio-Website',
-
 },
 ];
 
@@ -42,7 +42,7 @@ const cardsArray = [
     title: 'Professional Art Printing Data',
     description: `A daily section of privately personalized reads; no accounts or signups required.
                 This has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.`,
-    deskDescription: '',
+    deskDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     image: './images/ss-small.png',
     deskImage: './images/ss-big.png',
     languages1: 'HTML',
@@ -57,7 +57,7 @@ const cardsArray = [
     title: 'Professional Art Printing Data',
     description: `A daily section of privately personalized reads; no accounts or signups required.
                 This has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.`,
-    deskDescription: '',
+    deskDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     image: './images/ss-small.png',
     deskImage: './images/ss-big.png',
     languages1: 'HTML',
@@ -72,7 +72,7 @@ const cardsArray = [
     title: 'Professional Art Printing Data',
     description: `A daily section of privately personalized reads; no accounts or signups required.
                 This has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.`,
-    deskDescription: '',
+    deskDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     image: './images/ss-small.png',
     deskImage: './images/ss-small.png',
     languages1: 'HTML',
@@ -86,7 +86,7 @@ const cardsArray = [
     title: 'Data Dashboard Healthcare',
     description: `A daily section of privately personalized reads; no accounts or signups required.
                 This has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.`,
-    deskDescription: '',
+    deskDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     image: './images/ss-small.png',
     deskImage: './images/ss-big.png',
     languages1: 'HTML',
@@ -100,7 +100,7 @@ const cardsArray = [
     title: 'Website Portfolio',
     description: `A daily section of privately personalized reads; no accounts or signups required.
                 This has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.`,
-    deskDescription: '',
+    deskDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     image: './images/ss-small.png',
     deskImage: './images/ss-big.png',
     languages1: 'HTML',
@@ -114,7 +114,7 @@ const cardsArray = [
     title: 'Data Dashboard Healthcare',
     description: `A daily section of privately personalized reads; no accounts or signups required.
                 This has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.`,
-    deskDescription: '',
+    deskDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     image: './images/ss-small.png',
     deskImage: './images/ss-big.png',
     languages1: 'HTML',
@@ -136,6 +136,16 @@ const desktclosePopup = document.querySelector('.desktclose-button');
 desktclosePopup.addEventListener('click', () => {
   document.querySelector('.desktpopupcontainer').classList.remove('expanded');
 });
+
+const stories = document.querySelector('.stories');
+stories.textContent = projectsArray[0].title;
+const storiesText = document.querySelector('.stories-text');
+storiesText.textContent = projectsArray[0].desktexts;
+const jsArray = document.querySelectorAll('.but2');
+jsArray[0].textContent = projectsArray[0].languages1;
+jsArray[1].textContent = projectsArray[0].languages2;
+jsArray[2].textContent = projectsArray[0].languages3;
+jsArray[3].textContent = projectsArray[0].languages4;
 
 const firstCardPopUp = document.querySelector('.btnsettings');
 firstCardPopUp.addEventListener('click', () => {
@@ -235,7 +245,7 @@ cardsArray.forEach((list) => {
     thetxt.textContent = list.description;
 
     const thetxtDesk = document.querySelector('.desktthetxt');
-    thetxtDesk.textContent = list.description;
+    thetxtDesk.textContent = list.deskDescription;
 
     document.querySelector('.desktpopupcontainer').classList.toggle('expanded');
     document.querySelector('.popupcontainer').classList.toggle('extended');

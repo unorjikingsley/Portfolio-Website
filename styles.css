@@ -1667,6 +1667,7 @@ html {
     background-color: rgba(0, 0, 0, 0.85);
     display: none;
     backdrop-filter: blur (30px);
+    height: 100%;
   }
 
   .expanded {
@@ -1762,16 +1763,27 @@ html {
   }
 
   .desktcardbutton1 {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 12px;
-    height: 48px;
-    width: 134px;
-    background: #ff6b00;
+    background-color: #ff6b00;
     border: none;
-    gap: 3px;
+    color: #fbf8f7;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+  .desktcardbutton1:hover,
+  .desktcardbutton1:active {
+    background-color: #fbf8f7;
+    color: #ff6b00 !important;
+    border: 1px solid #ff6b00;
+  }
+
+  .desktcardbutton1:hover {
+    color: #ff6b00 !important;
   }
 
   .desktlive-link {
@@ -1789,6 +1801,10 @@ html {
     color: #fff;
   }
 
+  .desktlive-link:hover {
+    color: #ff6b00 !important;
+  }
+
   .desktsource-link {
     font-family: 'Inter', sans-serif;
     font-style: normal;
@@ -1803,9 +1819,17 @@ html {
     gap: 2px;
   }
 
+  .desktsource-link:hover {
+    color: #ff6b00 !important;
+  }
+
   .fa-github::before {
     content: "\f09b";
     color: #fff;
+  }
+
+  .fa-github:hover {
+    color: #ff6b00;
   }
 
   .popupcontainer {
