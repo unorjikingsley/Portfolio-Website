@@ -265,9 +265,34 @@ function valid() {
 }
 
 // stop button default action
-const form = document.querySelector('form');
-form.addEventListener('submit', (event) => {
+const vForm = document.querySelector('form');
+vForm.addEventListener('submit', (event) => {
   if (valid() === false) {
     event.preventDefault();
   }
+});
+
+// local storage
+const form = document.getElementById('form');
+
+const nameInput = document.getElementsByName('user-name');
+const emailInput = document.getElementsByName('e-mail');
+const messageInput = document.getElementsByName('message');
+
+if (localStorage.getItem('form-data')) {
+  const formData = JSON.parse(localStorage.getItem('form-data'));
+  nameInput[0].value = formData.nameInputValue;
+  emailInput[0].value = formData.emailInputValue;
+  messageInput[0].value = formData.messageInputValue;
+}
+
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+  const formData = {
+    nameInputValue: nameInput[0].value,
+    emailInputValue: emailInput[0].value,
+    messageInputValue: messageInput[0].value,
+  };
+  localStorage.setItem('form-data', JSON.stringify(formData));
+  form.submit();
 });
