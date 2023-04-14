@@ -29,7 +29,7 @@ const projectsArray = [{
   desktexts: 'A daily selection of privately personalized reads; no accounts or sign-ups required. This has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
   languages1: 'CSS',
   languages2: 'HTML',
-  languages3: 'Ruby on Rails',
+  languages3: 'ROR',
   languages4: 'Bootstrap',
   seeLive: 'https://unorjikingsley.github.io/Portfolio-Website/',
   seeSource: 'https://github.com/unorjikingsley/Portfolio-Website',
