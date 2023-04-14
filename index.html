@@ -6,200 +6,286 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/5116129a4d.js" crossorigin="anonymous"></script>
-    <title>My Portfolio</title>
+    <title>UnorjiKingsley's Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
-    <header class="head">
+    <header class="header">
         <a href="" class="name">Kingsley</a>
-        <nav class="hamburger"><i class="fas fa-bars"></i></nav>
+        <button class="nav-toggle"><span class="hamburger"></span></button>
+
+        <nav class="navigation">
+            <ul class="nav-items">
+                <li class="nav-list"><a href="#my-works">Portfolio</a></li>
+                <li class="nav-list"><a href="#aboutme">About</a></li>
+                <li class="nav-list"><a href="#form">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!--desktop-->
+        <ul class="headline-sect">
+            <li><a href="">Portfolio</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+            <li><img src="images/Union.png" alt="message-icon"></li>
+        </ul>
     </header>
 
-    <section class="headline">
-        <h1 class="intro">Hey There. I'm Kingsley</h1>
-        <h2 class="developer">I'm a Software developer</h2>
-        <p class="abilities">I can help you build a product , feature or website Look through some of my work and
-            experience!
-            If you like what you see and have a project you need coded, don’t hestiate to contact me.</p>
-        <ul class="icons">
-            <li class="github"><a href="#"><i class="fa-brands fa-github"></i></a></li>
-            <li class="linkedin"><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-            <li class=angelist><a href="#"><i class="fab fa-angellist"></i></a></li>
-            <li class="twitter"><a href="#"><i class="fa-brands fa-twitter"></i></a></i></li>
-            <li class="facebook"><a href="#"></a><i class="fa-brands fa-facebook-f"></i></li>
-        </ul>
+
+    <section class="cont-alls">
+        <div class="headline">
+            <ul class="icons">
+                <li class="github" id="mines"><a href="https://github.com/unorjikingsley"><img src="images/github.png"
+                            alt="direct-link-to-github-profile" id="centered-icons"></a></li>
+                <li class="linkedin" id="mines"><a href="https://www.linkedin.com/in/unorjikingsley/"><img
+                            src="images/li.png" alt="linkedln-profile" id="centered-icons"></a></li>
+                <li class=angelist id="mines"><a href="https://angel.com"><img src="images/angel-list.png"
+                            alt="direct-link-to-angelist-profile" id="centered-icons"></a></li>
+                <li class="twitter" id="mines"><a href="https://twitter.com/KingselyUnorji"><img
+                            src="images/twitter.png" alt="direct-link-to-twitter-profile" id="centered-icons"></a></li>
+                <li class=medium id="mines"><a href="https://meduim.com"><img src="images/me.png"
+                            alt="direct-link-to-angelist-profile" id="centered-icons"></a></li>
+            </ul>
+
+            <div id="write">
+                <div>
+                    <h1 class="intro" id="first">Hey There. I'm Kingsley</h1>
+                </div>
+                <div>
+                    <h2 class="developer" id="first">I'm a Software developer</h2>
+                </div>
+                <div>
+                    <p class="abilities" id="first">I can help you build a product , feature or website Look through
+                        some of my work and
+                        experience!
+                        If you like what you see and have a project you need coded, don’t hestiate to contact me.</p>
+                </div>
+            </div>
+        </div>
     </section>
 
     <section class="recent">
-        <h2 class="recent-item">My Recent Works</h2>
-        <div class="line"></div>
-        <div class="yellowboard">
-            <img src="images/bigyellow.png" width=327 height=237 alt="">
+        <div id="recent">
+            <h2 class="recent-item">My Recent Works</h2>
+            <img src="images/v.png" alt="line" class="divide" />
+            <div class="line"></div>
         </div>
-        <div class="topic">
-            <div class="stories">Multi-Post Stories</div>
-            <p class="stories-text">A daily selection of privately personalized reads;
-                no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s,
-                when an unknown printer took a standard dummy text.
-            </p>
-            <ul class="skills">
-                <li class="but2">CSS</li>
-                <li class="but2">HTML</li>
-                <li class="but2">Bootstrap</li>
-                <li class="but2">Ruby</li>
-            </ul>
-        </div>
-        <button type="button" id="first" class="btnsettings ">See project</button>
     </section>
+
+    <article>
+        <div id="desktop-layout">
+            <div class="yellowboard">
+                <img src="images/bigyellow.png" width=327 height=237 alt="Image-placeholder" id="yellow">
+            </div>
+            <div class="topic">
+                <div class="stories"></div>
+                <p class="stories-text">
+                </p>
+                <ul class="skills">
+                    <li class="but2"></li>
+                    <li class="but2"></li>
+                    <li class="but2"></li>
+                    <li class="but2"></li>
+                </ul>
+                <button type="button" id="first" class="btnsettings ">See project</button>
+            </div>
+        </div>
+    </article>
 
     <section class="MyWorks">
-        <div class="container">
-            <div class="container1">
-                <h2 class="cont-header">Professional Art Printing Data</h2>
-                <p class="cont-text"> A daily selection of privately personalized reads;
-                    no accounts or sign-ups required.
-                    has been the industry's standard
-                </p>
-                <ul class="lang">
-                    <li class="but">HTML</li>
-                    <li class="but">Bootstrap</li>
-                    <li class="but">Ruby</li>
-                </ul>
-            </div>
-            <button type="button" class="oversight">See-Project</button>
-        </div>
-
-        <div class="container">
-            <div class="container1">
-                <h2 class="cont-header">Professional Art Printing Data</h2>
-                <p class="cont-text"> A daily selection of privately personalized reads;
-                    no accounts or sign-ups required.
-                    has been the industry's standard
-                </p>
-                <ul class="lang">
-                    <li class="but">HTML</li>
-                    <li class="but">Bootstrap</li>
-                    <li class="but">Ruby</li>
-                </ul>
-            </div>
-            <button type="button" class="oversight">See-Project</button>
-        </div>
-        <div class="container">
-            <div class="container1">
-                <h2 class="cont-header">Professional Art Printing Data</h2>
-                <p class="cont-text"> A daily selection of privately personalized reads;
-                    no accounts or sign-ups required.
-                    has been the industry's standard
-                </p>
-                <ul class="lang">
-                    <li class="but">HTML</li>
-                    <li class="but">Bootstrap</li>
-                    <li class="but">Ruby</li>
-                </ul>
-            </div>
-            <button type="button" class="oversight">See Project</button>
-        </div>
-        <div class="container">
-            <div class="container1">
-                <h2 class="cont-header">Professional Art Printing Data</h2>
-                <p class="cont-text"> A daily selection of privately personalized reads;
-                    no accounts or sign-ups required.
-                    has been the industry's standard
-                </p>
-                <ul class="lang">
-                    <li class="but">HTML</li>
-                    <li class="but">Bootstrap</li>
-                    <li class="but">Ruby</li>
-                </ul>
-            </div>
-            <button type="button" class="oversight">See Project</button>
-        </div>
-        <div class="container">
-            <div class="container1">
-                <h2 class="cont-header">Professional Art Printing Data</h2>
-                <p class="cont-text"> A daily selection of privately personalized reads;
-                    no accounts or sign-ups required.
-                    has been the industry's standard.
-                </p>
-                <ul class="lang">
-                    <li class="but">HTML</li>
-                    <li class="but">Bootstrap</li>
-                    <li class="but">Ruby</li>
-                </ul>
-            </div>
-            <button type="button" class="oversight">See Project</button>
-        </div>
-        <div class="container">
-            <div class="container1">
-                <h2 class="cont-header">Professional Art Printing Data</h2>
-                <p class="cont-text"> A daily selection of privately personalized reads;
-                    no accounts or sign-ups required.
-                    has been the industry's standard.
-                </p>
-                <ul class="lang">
-                    <li class="but">HTML</li>
-                    <li class="but">Bootstrap</li>
-                    <li class="but">Ruby</li>
-
-                </ul>
-            </div>
-            <button type="button" class="oversight">See Project</button>
-        </div>
+        <!-- <article id="move"></article> -->
     </section>
 
-    <section class="About-me">
+    <section class="About-me" id="aboutme">
         <div class="picfix">
-            <div class="abt">
-                <h3 class="bou-me">About me</h3>
-                <p class="abt-text">Hello I’m a software developer!
-                    I can help you build a product , feature or website Look through some of my work and experience! If
-                    you
-                    like what you see and have a project you need coded,
-                    don’t hestiate to contact me.
-                </p>
-                <a href=""> <button type="button" class="resume">Get My Resume</button></a>
+            <div class="moved">
+                <div class="abt">
+                    <h3 class="bou-me">About me</h3>
+                    <p class="abt-text">Hello I’m a software developer!
+                        I can help you build a product , feature or website Look through some of my work and experience!
+                        If you like what you see and have a project you need coded, don’t hestiate to contact me.
+                    </p>
+                    <a href=""> <button type="button" class="resume">Get My Resume</button></a>
+                </div>
             </div>
 
-            <div class="underline"></div>
-            <div class="lang-cont">
-                <div class="language-container">
-                    <div class="lang-heading"><img src="images/rhombus.png" alt="">
-                        <h3 class="iconic">Language</h3>
+            <div id="mobile-line"><img src="images/Vector 89.png" alt="line"></div>
+            <div id="underline"><img src="images/Vector 12.png" alt="aline"></div>
+            <div id="lang-cont">
+                <div class="lang-cont">
+                    <div class="language-container">
+                        <div class="lang-heading"><img src="images/rhombus.png" alt="a rhombus">
+                            <h3 class="iconic">Language</h3>
+                        </div>
+                        <ul class="langlist">
+                            <li class="jss">Javascript</li>
+                            <li class="jss">Ruby</li>
+                            <li class="jss">HTML</li>
+                            <li class="jss">CSS</li>
+                        </ul>
                     </div>
-                    <ul class="langlist">
-                        <li class="jss">Javascript</li>
-                        <li class="jss">Ruby</li>
-                        <li class="jss">Html</li>
-                        <li class="jss"> Css</li>
-                    </ul>
-                </div>
-                <div class="framecont">
-                    <div class="lang-heading"><img src="images/rectangle.png" alt="">
-                        <h3 class="iconic">Framework</h3>
+                    <div class="framecont">
+                        <div class="lang-heading"><img src="images/rectangle.png" alt="a square">
+                            <h3 class="iconic">Framework</h3>
+                        </div>
+                        <ul class="langlist">
+                            <li class="jss">Bootstrap</li>
+                            <li class="jss">Ruby on Rails</li>
+                            <li class="jss">RSPec</li>
+                            <li class="jss">Selenium</li>
+                            <li class="jss">CapyBara</li>
+                        </ul>
                     </div>
-                    <ul class="langlist">
-                        <li class="jss">Bootstrap</li>
-                        <li class="jss">Ruby on Rails</li>
-                        <li class="jss">RSPec</li>
-                        <li class="jss">CapyBara</li>
-                        <li class="jss">Selenium</li>
-                    </ul>
-                </div>
-                <div class="skillscont">
-                    <div class="lang-heading"><img src="images/circle.png" alt="">
-                        <h3 class="iconic"></h3>Skills
+                    <div class="skillscont">
+                        <div class="lang-heading">
+                            <img src="images/circle.png" alt="a circle">
+                            <h3 class="iconic">Skills</h3>
+                        </div>
+                        <ul class="langlist">
+                            <li class="jss">Database Management</li>
+                            <li class="jss">Version Control</li>
+                            <li class="jss">CLI</li>
+                            <li class="jss">App Design</li>
+                            <li class="jss">Web Development</li>
+                        </ul>
                     </div>
-                    <ul class="langlist">
-                        <li class="jss">Codekit</li>
-                        <li class="jss">Github</li>
-                        <li class="jss">Codepen</li>
-                        <li class="jss"> Gitlab</li>
-                        <li class="jss"> Terminal</li>
-                    </ul>
                 </div>
             </div>
+        </div>
     </section>
+
+    <form action="https://formspree.io/f/xeqwrjop" method="post" class="contact-form" id="form">
+        <div class="interest">
+            <h4>I'm always interested in hearing about new projects,
+                so if you'd like to chat please get in touch.</h4>
+        </div>
+        <div class="all-cont">
+            <div class="all">
+                <div class="nms">
+                    <input type="text" class="my-input-class-2" placeholder="Full name" maxlength="30" name="user-name"
+                        autocomplete="username" required>
+
+                    <input type="text" class="my-input-class" placeholder="First name" maxlength="30" name="user-name"
+                        autocomplete="username" required>
+
+                    <input type="text" class="my-input-class" placeholder="Last name" maxlength="30" name="user-name"
+                        autocomplete="username" required>
+                </div>
+                <input type="email" placeholder="Email address" class="email" name="e-mail" required>
+            </div>
+            <textarea name="message" placeholder="Write me something..." maxlength="500" class="ta" required></textarea>
+            <button type="submit" id="get-me" required class="btz">Get in touch</button>
+        </div>
+    </form>
+
+    <div class="border"></div>
+
+    <footer class="feet">
+        <ul class="footer-icons">
+            <li class="ikes" id="foots"><a href="https://github.com/unorjikingsley"><img src="images/github/Vector.png"
+                        alt="github-icon"></a></li>
+            <li class="linkedin" id="mines"><a href="https://www.linkedin.com/in/unorjikingsley/"><img
+                        src="images/2.png" alt="github-icon"></i></a></li>
+            <li class=ikes id="foots"><a href=""><img src="images/angelisst/Vector.png" alt="angel-list icon"></a></li>
+            <li class="ikes" id="foots"><a href="https://twitter.com/KingselyUnorji"><img
+                        src="images/twitter/Vector.png" alt="twitter icon"></a></i></li>
+            <li class="ikes" id="foots"><a href=""><img src="images/M sign/Vector.png" alt="messenger-icon"></i></a>
+            </li>
+        </ul>
+    </footer>
+
+    <!--for mobile-->
+    <article class="popupcontainer">
+        <div class="modalwindowcontainer">
+            <div class="popup-header">
+                <h2 class="trackkeeping"></h2>
+                <div class="close-button">+</div>
+            </div>
+            <ul class="desktopnewlang">
+                <li class="desknewLang"></li>
+                <li class="desknewLang"></li>
+                <li class="desknewLang"></li>
+            </ul>
+
+            <div class="picturefttext">
+                <div id="popup-image">
+                    <img class="img-popup" src="" alt="">
+                </div>
+
+                <div class="newtxt">
+                    <div class="desktop-popup-texts">
+                        <p class="thetxt">
+                        </p>
+                    </div>
+
+                    <div class="livedisplay">
+                        <button type="button" class="cardbutton1"><a class="live-link" rel="noopener" target="_blank"
+                                href='https://unorjikingsley.github.io/Portfolio-Website/'>See Live</a> <img
+                                src="images/Icon.png"></button>
+
+                        <button type="button" class="cardbutton1"><a class="source-link" rel="noopener"
+                                alt="source-link" target=" _blank"
+                                href='https://github.com/unorjikingsley/Portfolio-Website'>See Source <i
+                                    class="fa-brands fa-github"></i></a>
+                            </a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <!--for desktop-->
+    <article class="desktpopupcontainer">
+        <div class="desktmodalwindowcontainer">
+            <div class="desktpopup-header">
+                <h2 class="desktexts"></h2>
+                <div class="desktclose-button">+</div>
+            </div>
+            <ul class="Ddesktopnewlang">
+                <li class="DdesknewLang"></li>
+                <li class="DdesknewLang"></li>
+                <li class="DdesknewLang"></li>
+            </ul>
+
+            <div class="desktpicturefttext">
+                <div id="desktpopup-image">
+                    <img class="desktimg-popup" src="" alt="">
+                </div>
+
+                <div class="desktnewtxt">
+                    <div class="Ddesktop-popup-texts">
+                        <p class="desktthetxt">
+                        </p>
+                    </div>
+
+                    <div class="desktlivedisplay">
+
+                        <a href='https://unorjikingsley.github.io/Portfolio-Website/' target='_blank' rel='noopener'>
+                            <button type='button' class='desktcardbutton1'>
+                                <span class='desktlive-link'>See Live</span>
+                                <img src='images/Icon.png'>
+                            </button>
+                        </a>
+
+                        <a href='https://github.com/unorjikingsley/Portfolio-Website' target='_blank' rel='noopener'>
+                            <button type='button' class='desktcardbutton1'>
+                                <span class='desktsource-link'>
+                                    See Source
+                                    <i class='fa-brands fa-github'></i>
+                                </span>
+                            </button>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <script src="script/index.js"></script>
+
 </body>
 
 </html>
