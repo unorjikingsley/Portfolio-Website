@@ -251,3 +251,23 @@ cardsArray.forEach((list) => {
     document.querySelector('.popupcontainer').classList.toggle('extended');
   });
 });
+
+// form validation
+function valid() {
+  const email = document.getElementById('email').value;
+  const validatedEmail = email.toLowerCase();
+  if (validatedEmail === email) {
+    document.querySelector('.error').textContent = '';
+    return true;
+  }
+  document.querySelector('.error').textContent = 'Email address should always be in Lowercase.';
+  return false;
+}
+
+// stop button default action
+const form = document.querySelector('form');
+form.addEventListener('submit', (event) => {
+  if (valid() === false) {
+    event.preventDefault();
+  }
+});
