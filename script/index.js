@@ -279,20 +279,32 @@ const nameInput = document.getElementsByName('user-name');
 const emailInput = document.getElementsByName('e-mail');
 const messageInput = document.getElementsByName('message');
 
+let formData = {
+  nameInputValue: '',
+  emailInputValue: '',
+  messageInputValue: '',
+};
+
 if (localStorage.getItem('form-data')) {
-  const formData = JSON.parse(localStorage.getItem('form-data'));
+  formData = JSON.parse(localStorage.getItem('form-data'));
   nameInput[0].value = formData.nameInputValue;
   emailInput[0].value = formData.emailInputValue;
   messageInput[0].value = formData.messageInputValue;
 }
 
+function updateFormData() {
+  formData.nameInputValue = nameInput[0].value;
+  formData.emailInputValue = emailInput[0].value;
+  formData.messageInputValue = messageInput[0].value;
+  localStorage.setItem('form-data', JSON.stringify(formData));
+}
+
+nameInput[0].addEventListener('input', updateFormData);
+emailInput[0].addEventListener('input', updateFormData);
+messageInput[0].addEventListener('input', updateFormData);
+
 form.addEventListener('submit', (event) => {
   event.preventDefault();
-  const formData = {
-    nameInputValue: nameInput[0].value,
-    emailInputValue: emailInput[0].value,
-    messageInputValue: messageInput[0].value,
-  };
   localStorage.setItem('form-data', JSON.stringify(formData));
   form.submit();
 });

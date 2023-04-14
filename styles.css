@@ -1498,7 +1498,7 @@ html {
     border: none;
     border-bottom: 1px solid #dbd8d7;
     margin-top: 120px;
-    width: 500px;
+    width: 684px;
     justify-content: flex-start;
     color: #979493;
     padding-bottom: 1.5%;
@@ -1508,10 +1508,6 @@ html {
     font-weight: 400;
     font-size: 15px;
     line-height: 24px;
-  }
-
-  .my-input-class-2 {
-    display: none;
   }
 
   input[type='email'] {
